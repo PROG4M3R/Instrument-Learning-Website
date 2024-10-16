@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Instrument Learing </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive instrument Learning</h1>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#instruments">Instruments</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#signin">Sign In</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Our Site</h2>
+        <p>Welcome to our website to get a real life experience of instrument learning. Here you will be able to learn and explore different types of instruments audio. </p>
+    </section>
+
+    <section id="instruments">
+        <h2>Instruments</h2>
+        <p></p>
+        <ul>
+            <li>Guitar</li>
+            <li>Piano</li>
+            <li>Flute</li>
+        </ul>
+    </section>
+
+    <section id="instruments">
+        <h2>Instruments Description</h2>
+        <ul id="instrument-images">
+            <li>
+                <h3>Guitar</h3>
+                <img src="images/guitar.png" alt="Guitar" width="200">
+            </li>
+            <li>
+                <h3>Piano</h3>
+                <img src="images/piano.png" alt="Piano" width="200">
+            </li>
+            <li>
+                <h3>Flute</h3>
+                <img src="images/flute.png" alt="Flute" width="200">
+            </li>
+            <li id="drum">
+                <h3>Drum</h3>
+                <img src="images/drum.png" alt="Drum" width="200">
+            </li>
+            <li>
+                <h3>Electric-Guitar</h3>
+                <img src="images/eguitar.png" alt="EGuitar" width="200">
+            </li>
+        </ul>
+    </section>
+    
+
+    <section id="reservation">
+        <h2>Reservation Form</h2>
+        <form action="mini_project.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="signin">
+        <h2>Sign In</h2>
+        <form action="mp2.php">  
+            <label for="signin-email">Email:</label>
+            <input type="email" id="signin-email" name="signin-email" required>
+
+            <label for="signin-password">Password:</label>
+            <input type="password" id="signin-password" name="signin-password" required>
+
+            <button type="submit">Sign In</button>
+        </form>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@ourwebsite.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </footer>
+</body>
+</html>
