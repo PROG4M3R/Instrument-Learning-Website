@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Instrument</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Choose Your <span class="highlight">Instrument</span></h1>
+    <div class="instrument-grid">
+        <div class="instrument-card" onclick="selectInstrument('Guitar')">
+            <img src="../images/guitar.png" alt="Guitar" class="instrument-image">
+            <p class="instrument-name">Guitar</p>
+        </div>
+
+        <div class="instrument-card" onclick="selectInstrument('Piano')">
+            <img src="../images/piano.png" alt="Piano" class="instrument-image">
+            <p class="instrument-name">Piano</p>
+        </div>
+
+        <div class="instrument-card" onclick="selectInstrument('Drum')">
+            <img src="../images/drum.png" alt="Drum" class="instrument-image">
+            <p class="instrument-name">Drum</p>
+        </div>
+
+        <div class="instrument-card" onclick="selectInstrument('Flute')">
+            <img src="../images/flute.png" alt="Flute" class="instrument-image">
+            <p class="instrument-name">Flute</p>
+        </div>
+
+       
+    </div>
+</div>
+<div class="progress-container">
+    <div class="progress-bar" id="progress-bar"></div>
+</div>
+<script>
+    function selectInstrument(instrument) {
+        alert("You selected: " + instrument);
+    }
+</script>
+
+</body>
+</html>
