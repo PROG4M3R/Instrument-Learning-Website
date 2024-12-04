@@ -3,37 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Instrument Learing </title>
+    <title>Interactive Instrument Learning</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Interactive Instrument Learning</h1>
-        <nav>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#instruments">Instruments</a></li>
-                <li><a href="#reservation">Reservation</a></li>
-                <li><a href="#signin">Sign In</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>KeyNote<br>Interactive Instrument Learning</h1>
+        
     </header>
 
     <section id="about">
         <h2>About Our Site</h2>
-        <p>Welcome to our website to get a real life experience of instrument learning. Here you will be able to learn and explore different types of instruments audio. </p>
-    </section>
-
-    <section id="instruments">
-        <h2>Instruments</h2>
-        <p></p>
-        <ul>
-            <li>Guitar</li>
-            <li>Piano</li>
-            <li>Flute</li>
-        </ul>
+        <p>Welcome to our website to get a real-life experience of instrument learning. Here you will be able to learn and explore different types of instruments through audio.</p>
     </section>
 
     <section id="instruments">
@@ -55,29 +37,44 @@
                 <h3>Drum</h3>
                 <img src="images/drum.png" alt="Drum" width="200">
             </li>
-            <!-- <li>
-                <h3>Electric-Guitar</h3>
-                <img src="images/eguitar.png" alt="EGuitar" width="200">
-            </li> -->
         </ul>
+    </section>
+
+    <section id="form-selection">
+        <h2>Select an Option</h2>
+        <button class="btn" onclick="showForm('signup')">Sign Up</button>
+        <button class="btn" onclick="showForm('signin')">Sign In</button>
     </section>
     
 
-    <section id="reservation">
-        <h2>Reservation Form</h2>
-        <form action="mini_project.php">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <section id="signup" style="display: none;">
+        <h2>Sign Up</h2>
+        <form action="mini_project.html">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            <button class="btn" type="submit">Submit</button>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Optional">
+
+            <button class="btn" type="submit">Sign Up</button>
         </form>
     </section>
 
-    <section id="signin">
+    <section id="signin" style="display: none;">
         <h2>Sign In</h2>
-        <form action="miniproject.html">  
+        <form action="miniproject.html">
             <label for="signin-email">Email:</label>
             <input type="email" id="signin-email" name="signin-email" required>
 
@@ -90,7 +87,7 @@
 
     <footer id="contact">
         <h2>Contact Us</h2>
-        <p>Email: parasmadan3105@gmail.com</p>
+        <p>Email: keynoteOfficial@gmail.com</p>
         <p>Phone: +91 9213772040</p>
     </footer>
 </body>
