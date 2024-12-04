@@ -1,112 +1,69 @@
-* {
+html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background-color: #101010;
-    color: #e0e0e0;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
-    background-color: #1a1a1a;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-nav .logo {
-    font-size: 1.5em;
-    color: #00d296;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #e0e0e0;
-    text-decoration: none;
-    font-size: 1.1em;
-}
-
-nav ul li a.active {
-    color: #00d296;
-}
-
-.plans {
-    text-align: center;
-    padding: 100px 10%;
-}
-
-.plans h2 {
-    font-size: 2.5em;
-    color: #00d296;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-.plans p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    color: #e0e0e0;
-}
-
-.plan-list {
+.instruments {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0; 
+    background-color: #101010;
+    text-align: center;
+    flex-direction: column;
+}
+
+.instruments h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #00d296;
+}
+
+.instrument-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
     gap: 20px;
 }
 
-.plan-card {
+.instrument-card {
     background-color: #2b2b2b;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    width: 300px;
+    width: calc(50% - 20px); 
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.plan-card:hover {
-    transform: scale(1.05);
+.instrument-card:hover {
+    transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
-.plan-card h3 {
-    font-size: 1.8em;
+.instrument-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.instrument-card h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
     color: #00d296;
 }
 
-.plan-card .price {
-    font-size: 2em;
-    margin: 10px 0;
-    color: #ffffff;
-}
-
-.plan-card ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-}
-
-.plan-card ul li {
+.instrument-card p {
     font-size: 1em;
-    margin: 10px 0;
     color: #e0e0e0;
+    margin-bottom: 20px;
 }
 
-.plan-card .btn {
+.instrument-card .btn {
     background-color: #00d296;
     color: #000000;
     text-decoration: none;
@@ -115,8 +72,9 @@ nav ul li a.active {
     font-weight: bold;
 }
 
-.plan-card .btn:hover {
+.instrument-card .btn:hover {
     background-color: #019067;
+    color: #000000;
 }
 
 footer {
@@ -153,12 +111,6 @@ footer p a {
 }
 
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem 5%;
-    }
-
     footer {
         padding: 1.5rem 0.5rem;
     }
@@ -171,3 +123,4 @@ footer p a {
         font-size: 0.9rem;
     }
 }
+
