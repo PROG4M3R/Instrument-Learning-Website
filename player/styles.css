@@ -1,0 +1,107 @@
+/* General Reset */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: #f4f4f9;
+  }
+  
+  /* Header */
+  header {
+    background-color: #00d296;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  header p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #d4f5e2;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #00d296;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Table Styles */
+  table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #262626;
+    border: 1px solid #444;
+    color: white;
+  }
+  
+  table th,
+  table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #444;
+  }
+  
+  table thead {
+    background-color: #00d296;
+    color: white;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #2d2d2d;
+  }
+  
+  table tbody tr:hover {
+    background-color: #3a3a3a;
+  }
+  
+  /* Video Container */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* Checkbox Styles */
+  input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #00d296;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #00d296;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  
+  
