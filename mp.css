@@ -32,15 +32,37 @@
     align-self: center;
     justify-content: space-between;
     
-}
-.nav-mid a:hover {
-    color: #00d296;
-}
-.nav-mid a{
+}.nav-mid a {
     text-decoration: none;
     color: white;
     font-weight: 800;
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
 }
+
+.nav-mid a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #00d296;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-mid a:hover {
+    color: #00d296;
+}
+
+.nav-mid a:hover::after {
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+}
+
 .nav-right{
     display:flex;
     justify-self: end;
@@ -109,11 +131,13 @@
     height: 65rem;
 }
 .row1-instrument{
-    background-color: #191919;
+    background-color: #000000;
     padding: 5rem 0rem;
     color: white;
     display: grid;
     grid-template-columns: 1fr 5fr;
+    text-align: center;
+
 }
 .row1-content{
     display: grid;
@@ -143,6 +167,7 @@
     justify-content: space-around;
 }
 .instrument-text{
+    
     box-shadow: inset 1px 1px 20px #000000;
     border-radius: 5rem;
     color:#ffffff;
@@ -307,12 +332,6 @@
     color: black;
 }
 
-.row1-instrument {
-    background-color: #191919;
-    padding: 5rem 0;
-    color: white;
-    text-align: center;
-}
 
 .instrument-text {
     color: #00d296;

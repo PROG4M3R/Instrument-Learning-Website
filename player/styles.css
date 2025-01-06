@@ -1,107 +1,161 @@
-/* General Reset */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1c1c1c;
-    color: #f4f4f9;
-  }
-  
-  /* Header */
-  header {
-    background-color: #00d296;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  }
-  
-  header h1 {
-    font-size: 2rem;
-    margin: 0;
-  }
-  
-  header p {
-    margin-top: 10px;
-    font-size: 1.1rem;
-    color: #d4f5e2;
-  }
-  
-  /* Section Styles */
-  section {
-    padding: 20px;
-  }
-  
-  h2 {
-    color: #00d296;
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Table Styles */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #101010;
+  color: #e0e0e0;
+}
+
+header {
+  background-color: #101010;
+  color: #00d296;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #d4f5e2;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #00d296;
+  text-decoration: underline;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+  color: #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+table th,
+table td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #444;
+}
+
+table thead {
+  background-color: #00d296;
+  color: #000000;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #262626;
+}
+
+table tbody tr:hover {
+  background-color: #3a3a3a;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #00d296;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer h2 {
+  color: #00d296;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #00d296;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p a {
+  margin: 0 5px;
+}
+
+button.play {
+  background-color: #00d296;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.play:hover {
+  background-color: #019067;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
   table {
-    width: 90%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    background-color: #262626;
-    border: 1px solid #444;
-    color: white;
+      font-size: 0.9rem;
   }
-  
-  table th,
-  table td {
-    padding: 15px;
-    text-align: center;
-    border: 1px solid #444;
-  }
-  
-  table thead {
-    background-color: #00d296;
-    color: white;
-  }
-  
-  table tbody tr:nth-child(even) {
-    background-color: #2d2d2d;
-  }
-  
-  table tbody tr:hover {
-    background-color: #3a3a3a;
-  }
-  
-  /* Video Container */
-  .video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-  }
-  
-  .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-  
-  /* Checkbox Styles */
-  input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-    accent-color: #00d296;
-  }
-  
-  /* Footer */
+
   footer {
-    text-align: center;
-    padding: 15px 0;
-    background-color: #00d296;
-    color: white;
-    margin-top: 20px;
+      padding: 1.5rem 0.5rem;
   }
-  
-  
-  
+
+  footer h2 {
+      font-size: 1.5rem;
+  }
+
+  footer p {
+      font-size: 0.9rem;
+  }
+}
