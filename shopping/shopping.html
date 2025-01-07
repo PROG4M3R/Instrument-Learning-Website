@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrument Suggestions</title>
+    <link rel="stylesheet" href="styleshop.css">
+
+</head>
+<body>
+
+    <h1>Instrument Suggestions for Your Interest</h1>
+    <p>Tell us more about your interest, and we'll recommend the best instrument for you to purchase.</p>
+
+    <form id="recommendationForm">
+        <h2>Personalized Instrument Recommendations</h2>
+        
+        <label for="interest">What type of instrument are you interested in?</label><br>
+        <select id="interest" name="interest">
+            <option value="music">Music Instruments (e.g., guitar, piano, drums)</option>
+            <option value="programming">Programming Tools (e.g., coding hardware, software tools)</option>
+            <option value="electronics">Electronics or Technical Instruments (e.g., sensors, microcontrollers)</option>
+        </select><br><br>
+
+        <label for="budget">What is your budget range?</label><br>
+        <input type="number" id="budget" name="budget" placeholder="Enter your budget" required><br><br>
+
+        <label for="experience">What is your experience level?</label><br>
+        <select id="experience" name="experience">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select><br><br>
+
+        <button type="submit" class="button">Get Recommendations</button>
+    </form>
+
+    <div id="recommendations" style="display: none;">
+        <h2>Your Personalized Recommendations</h2>
+        <p id="recommendedInstruments"></p>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
+
