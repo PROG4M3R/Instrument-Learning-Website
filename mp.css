@@ -132,13 +132,61 @@
 }
 .row1-instrument{
     background-color: #000000;
-    padding: 5rem 0rem;
+    margin: 5rem 0rem;
     color: white;
     display: grid;
     grid-template-columns: 1fr 5fr;
     text-align: center;
-
+    border:  2px solid white;
+    border-left:none;
+    border-right: none;
+    padding: 2rem;
 }
+.tooltip-text{
+    background-color: white;
+    color: black;
+    position: absolute;
+    visibility:none;
+    opacity: 0;
+    pointer-events: none;
+}
+.sound-btn:hover ~ .tooltip-text{
+    visibility: visible;
+    opacity: 0.7;  
+    transition: opacity 0.5s;
+}
+
+
+
+.guitar:hover ~ .tooltip-text{
+    left: 19.3rem;
+}
+.piano:hover ~ .tooltip-text{
+    left: 33.3rem;
+}
+.flute:hover ~ .tooltip-text{
+    left: 47.3rem;
+}
+.drum:hover ~ .tooltip-text{
+    left: 63rem;
+}
+.eguitar:hover ~ .tooltip-text{
+    left: 79.3rem;
+}
+
+.piano:hover{
+    left: 33.3rem;
+}
+.flute:hover {
+    left: 47.3rem;
+}
+.drum:hover{
+    left: 63rem;
+}
+.eguitar:hover{
+    left: 79.3rem;
+}
+
 .row1-content{
     display: grid;
     grid-template-columns: 2fr 2.5fr;
@@ -196,6 +244,7 @@
 }
 .instrument-images img:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 .drum{
     min-width: 250px;
