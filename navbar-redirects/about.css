@@ -91,16 +91,4 @@ footer p a {
     margin: 0 5px;
 }
 
-@media (max-width: 768px) {
-    footer {
-        padding: 1.5rem 0.5rem;
-    }
 
-    footer h2 {
-        font-size: 1.5rem;
-    }
-
-    footer p {
-        font-size: 0.9rem;
-    }
-}

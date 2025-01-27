@@ -93,7 +93,7 @@
 .main-row{
     display: flex;
     flex-direction: column;
-    height: 45rem;
+    height: 100vh;
     background-image: url('bgblack.jpg');
     background-size: cover;
     background-position: center;
