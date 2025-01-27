@@ -25,7 +25,9 @@ header p {
   color: #d4f5e2;
 }
 
+
 section {
+  display:none;
   padding: 20px;
   text-align: center;
 }
@@ -38,6 +40,7 @@ h2 {
 }
 
 table {
+  
   width: 90%;
   margin: 0 auto;
   border-collapse: collapse;
@@ -55,6 +58,18 @@ table td {
   border: 1px solid #444;
 }
 
+th:nth-child(1),td:nth-child(1) {
+  width: 3%;
+}
+th:nth-child(2),td:nth-child(2) {
+  width: 24%;
+}
+th:nth-child(3),td:nth-child(3) {
+  width: 10%;
+}
+th:nth-child(4),td:nth-child(4) {
+  width: 55%;
+}
 table thead {
   background-color: #00d296;
   color: #000000;
@@ -68,9 +83,10 @@ table tbody tr:hover {
   background-color: #3a3a3a;
 }
 
-.video-container {
+#video-container {
+  display: none;
   position: relative;
-  padding-bottom: 56.25%;
+  padding: 1% 1% 47%;
   height: 0;
   overflow: hidden;
   border-radius: 10px;
